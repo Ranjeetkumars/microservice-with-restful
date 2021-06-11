@@ -1,0 +1,13 @@
+package com.ranjeet.rest.client;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class WelcomeClient {
+	public static void main(String[] args) throws MalformedURLException {
+		URL url = new URL("http://localhost:9191/");
+	
+	
+	}
+
+}

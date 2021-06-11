@@ -1,0 +1,13 @@
+package com.ranjeetbindingclss;
+
+import lombok.Data;
+
+@Data
+public class Book {
+
+	
+	private String isbn;
+	private String name;
+	private double price;
+	private String author;
+}

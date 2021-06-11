@@ -1,0 +1,17 @@
+package com.ranjeet.rest.client;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class WelcomeClient {
+	public static void main(String[] args) throws IOException {
+		URL url = new URL("http://localhost:9191/");
+	
+	  HttpURLConnection conn = (HttpURLConnection)url.openConnection();
+	  conn.setRequestMethod("Get");
+	int httpStatusCode =  conn.getResponseCode();
+	}
+
+}

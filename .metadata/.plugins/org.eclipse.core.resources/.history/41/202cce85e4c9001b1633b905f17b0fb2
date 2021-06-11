@@ -1,0 +1,18 @@
+package com.ranjeet.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ranjeetbindingclss.Book;
+
+@RestController
+public class BookRestController {
+	
+	
+    public Book getBookInfo(String isbn ) {
+    	
+    	Book b = new Book(isbn,"Spring",500.0,"Rod Johnson");
+    	
+    	
+    }
+
+}

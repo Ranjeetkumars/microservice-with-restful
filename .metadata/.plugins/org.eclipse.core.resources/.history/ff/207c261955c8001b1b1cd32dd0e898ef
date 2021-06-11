@@ -1,0 +1,9 @@
+package com.ranjeet.jaxb;
+
+public class JAXBDemo {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

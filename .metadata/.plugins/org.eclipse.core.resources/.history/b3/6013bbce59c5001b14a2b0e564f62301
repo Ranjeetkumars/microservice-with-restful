@@ -1,0 +1,18 @@
+package com.ranjeet.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class SecondControllers {
+	
+	
+	public ModelAndView displayWelcomeMsg() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("msg","Welcome");
+		mav.setViewName("index");
+		return mav;
+		
+	}
+
+}

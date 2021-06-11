@@ -1,0 +1,27 @@
+package com.ranjeet.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+//@Controller
+//@ResponseBody
+public class DemoController {
+	
+	
+	public DemoController() {
+		
+		System.out.println("*************DemoController****************");
+	}
+	
+	
+	
+	@GetMapping("/welcome")
+	public String welcome() {
+		String str = "Welcome to Restful service...";
+		return str;
+	}
+
+}

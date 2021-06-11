@@ -1,0 +1,12 @@
+package com.ranjeet.domain;
+
+import lombok.Data;
+
+@Data
+public class Customer {
+	
+	private String customername;
+	private String customerEmail;
+	private long customerPhoneNumber;
+
+}

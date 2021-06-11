@@ -1,0 +1,21 @@
+package com.ranjeet.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ranjeet.binding.Book;
+
+@RestController
+public class BookRestController {
+	
+	
+	@GetMapping(value = "/book/{isbn}")
+    public Book getBookInfo(@PathVariable("isbn") String isbn ) {
+		
+		//logic
+    	Book b = new Book(isbn,"Spring",500.0,"Rod Johnson");
+    	return b;
+    }
+
+}

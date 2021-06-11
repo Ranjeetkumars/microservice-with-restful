@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.ranjeetbindingclss&apos; to &apos;com.ranjeet.binding&apos;&#x0D;&#x0A;- Original project: &apos;SB-REST-Hateos&apos;&#x0D;&#x0A;- Original element: &apos;SB-REST-Hateos/src/main/java/com.ranjeetbindingclss&apos;&#x0D;&#x0A;- Renamed element: &apos;SB-REST-Hateos/src/main/java/com.ranjeet.binding&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.ranjeetbindingclss&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.ranjeetbindingclss" name="com.ranjeet.binding" qualified="false" references="true" stamp="1623326912001" textual="false" version="1.0"/>
+</session>

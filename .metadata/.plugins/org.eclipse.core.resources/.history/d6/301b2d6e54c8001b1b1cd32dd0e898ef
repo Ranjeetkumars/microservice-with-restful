@@ -1,0 +1,5 @@
+package com.ranjeet.domain;
+
+public class Student {
+
+}

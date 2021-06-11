@@ -1,0 +1,5 @@
+package com.ranjeet.pojo;
+
+public class Student {
+
+}

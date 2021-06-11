@@ -1,0 +1,27 @@
+package com.ranjeet.resource;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ranjeet.respone.Ticket;
+import com.ranjeet.reuest.PassengerInfo;
+
+@RestController
+public class ERailResource {
+
+	@PostMapping(value = "/bookTicket", produces = { "application/xml", "application/json" }, consumes = {
+			"application/json","application/xml" })
+	public Ticket bookTicket( PassengerInfo info) {
+        System.out.println(info);
+		// logic
+		Ticket t = new Ticket();
+		t.setTicketId("TA02899");
+		t.setTicketStatus("CONFIRMED");
+		t.setJounerydate(info.getJounerydate());
+		t.setPassengerName(info.getFname() + " " + info.getLname());
+		t.setTrainNumbre(info.getTrinNumber());
+		t.setTicketPrice(1180.0);
+		return t;
+	}
+
+}

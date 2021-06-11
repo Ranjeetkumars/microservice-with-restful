@@ -1,0 +1,9 @@
+package com.ranjeet.jaxb;
+
+public class JavaToXML {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

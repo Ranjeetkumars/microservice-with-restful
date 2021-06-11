@@ -1,0 +1,38 @@
+package com.ranjeet.jsonConverters;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.ranjeet.pojo.Student;
+
+public class JavatoJsonConverters {
+
+	public static void main(String[] args) throws JsonProcessingException {
+		convertSingleJavaObjtoJson();
+
+	}
+
+	public static void convertSingleJavaObjtoJson() throws JsonProcessingException {
+
+		Student s = new Student();
+		s.setStudentId(137);
+		s.setStudentname("Golden kumar");
+		s.setStudentSkill("Java");
+		ObjectMapper objMapper = new ObjectMapper();
+		String strStudentJson = objMapper.writeValueAsString(s);
+		System.out.println(strStudentJson);
+
+	}
+
+	public static void convertMultipleJavaObjtoJson() throws JsonProcessingException {
+
+		Student s = new Student();
+		s.setStudentId(137);
+		s.setStudentname("Golden kumar");
+		s.setStudentSkill("Java");
+		ObjectMapper objMapper = new ObjectMapper();
+		String strStudentJson = objMapper.writeValueAsString(s);
+		System.out.println(strStudentJson);
+
+	}
+
+}
