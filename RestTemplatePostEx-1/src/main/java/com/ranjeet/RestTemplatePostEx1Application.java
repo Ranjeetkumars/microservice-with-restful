@@ -29,9 +29,9 @@ public class RestTemplatePostEx1Application {
 		info.setTo("Patna");
 		info.setJounerydate("15-09-2021");
 		info.setTrinNumber("DNR12693");
-		ResponseEntity<Ticket> ticketResponse =   bean.postRequestBody(info);
+		Ticket ticketResponse =   bean.postRequestBody(info);
 		
-		System.out.println(ticketResponse);
+		System.out.println("----------> " +ticketResponse);
 	}
 
 }

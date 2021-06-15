@@ -17,10 +17,11 @@ public class InvokePostUri {
 
 	static final String HTTP_POST_END_POINT = "http://localhost:9191/bookTicket";
 
-	public ResponseEntity<Ticket> postRequestBody(PassengerInfo info) {
-		ResponseEntity<Ticket> ticketResponse = null;
-
-		log.info("postRequestBody method executed inside InvokePostUri service");
+	public Ticket postRequestBody(PassengerInfo info) {
+		
+      log.info("postRequestBody method executed inside InvokePostUri service");
+		
+		Ticket body =null;
 		RestTemplate restTemplate = new RestTemplate();
 
 		HttpHeaders headers = new HttpHeaders();
@@ -29,16 +30,16 @@ public class InvokePostUri {
 
 		HttpEntity<PassengerInfo> httpEntity = new HttpEntity<>(info, headers);
 
-		ticketResponse = restTemplate.postForEntity(HTTP_POST_END_POINT, httpEntity, Ticket.class);
+		ResponseEntity<Ticket> ticketResponse = restTemplate.postForEntity(HTTP_POST_END_POINT, httpEntity, Ticket.class);
 
 		if (ticketResponse != null && ticketResponse.getStatusCode().value() == 200) {
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@ START RESPONSE @@@@@@@@@@@@@@@@@@@@@@@@@@ ");
-			ticketResponse.getBody();
+			body = ticketResponse.getBody();
 			System.out.println(ticketResponse.getBody());
 			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@ END RESPONSE  @@@@@@@@@@@@@@@@@@@@@@@@@@@ ");
 		}
 
-		return ticketResponse;
+		return body;
 	}
 
 }
