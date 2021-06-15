@@ -25,6 +25,14 @@ public class WelcomeClient {
 			System.out.println(strResponse);
 			conn.disconnect();
 		}
+		
+		
+		
+		
+		//Invoke Path Varibale End Point
+		
+		
+		
 	}
 
 }
